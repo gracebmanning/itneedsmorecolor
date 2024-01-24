@@ -19,12 +19,12 @@
   align-items: center;
 }
 
-.circle{
+#home-circle{
   background-image: url('./assets/images/daisychain.jpeg');
   background-size: contain;
   border-radius: 50%;
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,22 +32,22 @@
 }
 
 .title{
-  width: 400px;
-  height: 400px;
-  font-size: 105px;
+  width: 450px;
+  height: 450px;
+  font-size: 120px;
   font-weight: 700;
   text-wrap: wrap;
   word-break: break-all;
 }
 
 .nav-buttons{
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 695px;
-  width: 695px;
+  height: 745px;
+  width: 745px;
   border-radius: 50%;
-  position: absolute;
 }
 
 .nav-button{
@@ -60,6 +60,7 @@
 }
 
 .nav-button:hover{
+  cursor: pointer;
   transform: scale(1.05);
   transition: 0.2s ease-out;
 }
@@ -89,6 +90,18 @@
 .nav-text{
   font-size: 18px;
   color: var(--accent-three);
+}
+
+#about-circle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-two);
+  position: absolute;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
 }
 
 /*
