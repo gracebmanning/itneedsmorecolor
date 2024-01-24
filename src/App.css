@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.home{
+.main{
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -11,12 +11,20 @@
   align-items: center;
 }
 
+.content{
+  margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .circle{
   background-image: url('./assets/images/daisychain.jpeg');
   background-size: contain;
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,10 +32,78 @@
 }
 
 .title{
-  width: 450px;
-  height: 450px;
-  font-size: 120px;
+  width: 400px;
+  height: 400px;
+  font-size: 105px;
   font-weight: 700;
   text-wrap: wrap;
   word-break: break-all;
 }
+
+.nav-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 695px;
+  width: 695px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.nav-button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: fit-content;
+  text-align: center;
+  transform: scale(1.0);
+  transition: 0.2s ease-in;
+}
+
+.nav-button:hover{
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+}
+
+.nav-icon{
+  width: 70px;
+  height: 70px;
+  margin: 0px;
+}
+
+.nav-text{
+  margin: 0px;
+}
+
+#proj-icon{
+  margin-left: 20px;
+}
+
+#about-icon{
+  margin-left: 0px;
+}
+
+#contact-icon{
+  margin-left: 20px;
+}
+
+.nav-text{
+  font-size: 18px;
+  color: var(--accent-three);
+}
+
+/*
+#proj-icon{
+  top: 350px;
+  right: 700px;
+}
+
+#about-icon{
+  top: 500px;
+  right: 680px;
+}
+
+#contact-icon{
+  top: 625px;
+  right: 595px;
+}
+*/
