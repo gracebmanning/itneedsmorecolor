@@ -1,0 +1,33 @@
+.App{
+  margin: 0;
+}
+
+.home{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  background-image: url('./assets/images/daisychain.jpeg');
+  background-size: contain;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  width: 450px;
+  height: 450px;
+  font-size: 120px;
+  font-weight: 700;
+  text-wrap: wrap;
+  word-break: break-all;
+}
