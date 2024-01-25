@@ -61,7 +61,7 @@ function Main() {
           <h1>projects</h1>
           <ul id="projects-list">
             <li>
-              <a href="">websites • coding</a>
+              <a href="/websites-coding">websites • coding</a>
             </li>
             <li>
               <a href="">ui/ux • graphic design</a>
