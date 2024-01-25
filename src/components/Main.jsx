@@ -21,6 +21,7 @@ function hide(){
 function toggleCircles(id){
   let elem = document.getElementById(id);
   if(id === "proj-circle"){
+    console.log(elem.style.visibility);
     if(elem.style.visibility === "hidden"){
       show("proj-circle");
       hide("title", "about-circle", "contact-circle");
@@ -57,31 +58,31 @@ function Main() {
         <div className="circle" id="home-circle">
             <h1 id="title">itneedsmorecolor.com</h1>
         </div>
-        <div className="circle" id="proj-circle">
+        <div className="circle" id="proj-circle" style={{visibility: `hidden`}}>
           <h1>projects</h1>
           <ul id="projects-list">
             <li>
               <a href="/websites-coding">websites • coding</a>
             </li>
             <li>
-              <a href="">ui/ux • graphic design</a>
+              <a href="/uiux-graphicdesign">ui/ux • graphic design</a>
             </li>
             <li>
-              <a href="">sewing • fiber arts</a>
+              <a href="/sewing-fiberarts">sewing • fiber arts</a>
             </li>
             <li>
-              <a href="">photography • collages</a>
+              <a href="/photography-filmmaking">photography • filmmaking</a>
             </li>
             <li>
-              <a href="">filmmaking</a>
+              <a href="/collages-printmaking">collages • printmaking</a>
             </li>
           </ul>
         </div>
-        <div className="circle" id="about-circle">
+        <div className="circle" id="about-circle" style={{visibility: `hidden`}}>
           <h1>about me</h1>
           <p id="about-text">I'm Grace and I make things! It's my favorite thing to do.</p>
         </div>
-        <div className="circle" id="contact-circle">
+        <div className="circle" id="contact-circle" style={{visibility: `hidden`}}>
           <h1>contact</h1>
           <p id="contact-text">want to work together or commission work from me? contact me via email at gracebmanning@gmail.com</p>
         </div>
@@ -106,7 +107,7 @@ function Main() {
       </div>
       <footer>
           <p className="footer-text">
-            center image is a fabric from <a href="https://schumacher.com/catalog/products/180131" target="_blank" rel="noreferrer">Schumacher</a>. 
+            center image is fabric from <a href="https://schumacher.com/catalog/products/180131" target="_blank" rel="noreferrer">Schumacher</a>. 
             Windows 98 icons from <a href="https://alexmeub.com/projects/windows-98-icons/" target="_blank" rel="noreferrer">Alex Meub</a>.
           </p>
         </footer>

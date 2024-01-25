@@ -1,16 +1,19 @@
-import './websites-coding.css';
+import './sewing-fiberarts.css';
 import ProjNavbar from '../ProjNavbar';
 import ProjFooter from '../ProjFooter';
 
-function WebsitesCoding() {
+function SewingFiberArts() {
   return (
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>websites</h1>
+            <h1>sewing</h1>
             <p>--------------- project gallery goes here ---------------</p>
             <br/><br/><br/>
-            <h1>other coding projects</h1>
+            <h1>crochet</h1>
+            <p>--------------- project gallery goes here ---------------</p>
+            <br/><br/><br/>
+            <h1>embroidery</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>
@@ -18,4 +21,4 @@ function WebsitesCoding() {
   );
 }
 
-export default WebsitesCoding;
+export default SewingFiberArts;

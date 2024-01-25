@@ -1,16 +1,16 @@
-import './websites-coding.css';
+import './uiux-graphicdesign.css';
 import ProjNavbar from '../ProjNavbar';
 import ProjFooter from '../ProjFooter';
 
-function WebsitesCoding() {
+function UIUXGraphicDesign() {
   return (
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>websites</h1>
+            <h1>UI/UX design</h1>
             <p>--------------- project gallery goes here ---------------</p>
             <br/><br/><br/>
-            <h1>other coding projects</h1>
+            <h1>graphic design</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>
@@ -18,4 +18,4 @@ function WebsitesCoding() {
   );
 }
 
-export default WebsitesCoding;
+export default UIUXGraphicDesign;
