@@ -22,10 +22,6 @@ p{
   margin: 0px;
 }
 
-a{
-  color: var(--accent-one);
-}
-
 footer{
   margin-top: auto;
   margin-bottom: 25px;

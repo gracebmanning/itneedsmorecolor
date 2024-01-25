@@ -4,44 +4,86 @@ import book from '../assets/icons/address_book-0.png';
 import folder from '../assets/icons/directory_favorites-2.png';
 import search from '../assets/icons/search_directory-0.png';
 
-function Main() {
-  function toggleCircles(id){
-    let proj = document.getElementById("proj-circle");
-    let about = document.getElementById("about-circle");
-    let contact = document.getElementById("contact-circle");
-    if(id === "proj-circle"){
-      proj.style.visibility === "hidden" ? proj.style.visibility = "visible" : proj.style.visibility = "hidden";
-      about.style.visibility = "hidden";
-      contact.style.visibility = "hidden";
-    } else if(id === "about-circle"){
-      about.style.visibility === "hidden" ? about.style.visibility = "visible" : about.style.visibility = "hidden";
-      proj.style.visibility = "hidden";
-      contact.style.visibility = "hidden";
-    } else if(id === "contact-circle"){
-      contact.style.visibility === "hidden" ? contact.style.visibility = "visible" : contact.style.visibility = "hidden";
-      about.style.visibility = "hidden";
-      proj.style.visibility = "hidden";
-    } else{
-      contact.style.visibility = "hidden";
-      about.style.visibility = "hidden";
-      proj.style.visibility = "hidden";
-    }
+function show(){
+  for(let a of arguments){
+    let elem = document.getElementById(a);
+    elem.style.visibility = "visible";
   }
-  
+}
+
+function hide(){
+  for(let a of arguments){
+    let elem = document.getElementById(a);
+    elem.style.visibility = "hidden";
+  }
+}
+
+function toggleCircles(id){
+  let elem = document.getElementById(id);
+  if(id === "proj-circle"){
+    if(elem.style.visibility === "hidden"){
+      show("proj-circle");
+      hide("title", "about-circle", "contact-circle");
+    } else{
+      hide("proj-circle");
+      show("title");
+    }
+  } else if(id === "about-circle"){
+    if(elem.style.visibility === "hidden"){
+      show("about-circle");
+      hide("title", "proj-circle", "contact-circle");
+    } else{
+      hide("about-circle");
+      show("title");
+    }
+  } else if(id === "contact-circle"){
+    if(elem.style.visibility === "hidden"){
+      show("contact-circle");
+      hide("title", "proj-circle", "about-circle");
+    } else{
+      hide("contact-circle");
+      show("title");
+    }
+  } else{
+    show("title");
+    hide("proj-circle", "about-circle", "contact-circle");
+  }
+}
+
+function Main() {
   return (
     <div className="main">
       <div className="content">
         <div className="circle" id="home-circle">
-            <h1 className="title">itneedsmorecolor.com</h1>
+            <h1 id="title">itneedsmorecolor.com</h1>
         </div>
         <div className="circle" id="proj-circle">
-          <p>Projects</p>
+          <h1>projects</h1>
+          <ul id="projects-list">
+            <li>
+              <a href="">websites • coding</a>
+            </li>
+            <li>
+              <a href="">ui/ux • graphic design</a>
+            </li>
+            <li>
+              <a href="">sewing • fiber arts</a>
+            </li>
+            <li>
+              <a href="">photography • collages</a>
+            </li>
+            <li>
+              <a href="">filmmaking</a>
+            </li>
+          </ul>
         </div>
         <div className="circle" id="about-circle">
-          <p>About Me!</p>
+          <h1>about me</h1>
+          <p id="about-text">I'm Grace and I make things! It's my favorite thing to do.</p>
         </div>
         <div className="circle" id="contact-circle">
-          <p>Contact</p>
+          <h1>contact</h1>
+          <p id="contact-text">want to work together or commission work from me? contact me via email at gracebmanning@gmail.com</p>
         </div>
         <div className="nav-buttons">
             <div className="nav-button" id="home-icon" onClick={() => toggleCircles('home-circle')}>
@@ -64,7 +106,7 @@ function Main() {
       </div>
       <footer>
           <p className="footer-text">
-            center image is a <a href="https://schumacher.com/catalog/products/180131" target="_blank" rel="noreferrer">fabric from Schumacher</a>. 
+            center image is a fabric from <a href="https://schumacher.com/catalog/products/180131" target="_blank" rel="noreferrer">Schumacher</a>. 
             Windows 98 icons from <a href="https://alexmeub.com/projects/windows-98-icons/" target="_blank" rel="noreferrer">Alex Meub</a>.
           </p>
         </footer>
