@@ -1,6 +1,5 @@
 import './uiux-graphicdesign.css';
-import ProjNavbar from '../ProjNavbar';
-import ProjFooter from '../ProjFooter';
+import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
 
 function UIUXGraphicDesign() {
   return (

@@ -1,6 +1,5 @@
 import './websites-coding.css';
-import ProjNavbar from '../ProjNavbar';
-import ProjFooter from '../ProjFooter';
+import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
 
 function WebsitesCoding() {
   return (

@@ -3,6 +3,7 @@ import globe from '../assets/icons/entire_network_globe-0.png';
 import book from '../assets/icons/address_book-0.png';
 import folder from '../assets/icons/directory_favorites-2.png';
 import search from '../assets/icons/search_directory-0.png';
+import { HomeCircle, ProjectCircle, AboutCircle, ContactCircle } from './circle';
 
 function show(){
   for(let a of arguments){
@@ -51,43 +52,31 @@ function toggleCircles(id){
   }
 }
 
+let currentCircle = 'home-circle';
+function switchCircles(id){
+  let elem = document.getElementById(currentCircle);
+  if(id === 'home-circle'){
+    elem.innerHTML = HomeCircle;
+  } else if(id === 'proj-circle'){
+    elem.innerHTML = ProjectCircle;
+  } else if(id === 'contact-circle'){
+    elem.innerHTML = ContactCircle;
+  } else{
+    elem.innerHTML = AboutCircle;
+  }
+  elem.id = id;
+  currentCircle = id;
+}
+
 function Main() {
   return (
     <div className="main">
       <div className="content">
         <div className="circle" id="home-circle">
-            <h1 id="title">itneedsmorecolor.com</h1>
-        </div>
-        <div className="circle" id="proj-circle" style={{visibility: `hidden`}}>
-          <h1>projects</h1>
-          <ul id="projects-list">
-            <li>
-              <a href="/websites-coding">websites • coding</a>
-            </li>
-            <li>
-              <a href="/uiux-graphicdesign">ui/ux • graphic design</a>
-            </li>
-            <li>
-              <a href="/sewing-fiberarts">sewing • fiber arts</a>
-            </li>
-            <li>
-              <a href="/photography-filmmaking">photography • filmmaking</a>
-            </li>
-            <li>
-              <a href="/collages-printmaking">collages • printmaking</a>
-            </li>
-          </ul>
-        </div>
-        <div className="circle" id="about-circle" style={{visibility: `hidden`}}>
-          <h1>about me</h1>
-          <p id="about-text">I'm Grace and I make things! It's my favorite thing to do.</p>
-        </div>
-        <div className="circle" id="contact-circle" style={{visibility: `hidden`}}>
-          <h1>contact</h1>
-          <p id="contact-text">want to work together or commission work from me? contact me via email at gracebmanning@gmail.com</p>
+          <h1 id="title">itneedsmorecolor.com</h1>
         </div>
         <div className="nav-buttons">
-            <div className="nav-button" id="home-icon" onClick={() => toggleCircles('home-circle')}>
+            <div className="nav-button" id="home-icon" onClick={switchCircles}>
               <img className="nav-icon" src={globe} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">home</p>
             </div>

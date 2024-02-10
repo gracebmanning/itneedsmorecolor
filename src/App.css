@@ -7,13 +7,9 @@
   contact-circle: 4
 */
 
-.App{
-  margin: 0;
-}
-
 .main{
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,21 +33,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-#home-circle{
-  z-index: 1;
-  background-image: url('./assets/images/daisychain.jpeg');
-  background-size: contain;
-}
-
-#title{
-  width: 450px;
-  height: 450px;
-  font-size: 120px;
-  font-weight: 700;
-  text-wrap: wrap;
-  word-break: break-all;
 }
 
 .nav-buttons{
@@ -113,61 +94,8 @@
   color: var(--accent-three);
 }
 
-#proj-circle{
-  z-index: 2;
-  visibility: hidden;
-  position: absolute;
-  background-color: rgba(54, 111, 117, 0.9);
-  color: var(--accent-four);
-  
-}
-
-#about-circle{
-  z-index: 3;
-  visibility: hidden;
-  position: absolute;
-  background-color: rgba(228, 157, 167, 0.9);
-  color: black
-}
-
-#contact-circle{
-  z-index: 4;
-  visibility: hidden;
-  position: absolute;
-  background-color: rgba(54, 111, 117, 0.9);
-  color: var(--accent-four);
-}
-
-#projects-list{
-  list-style-type: none;
-  line-height: 2;
-  font-size: 18px;
-  text-align: center;
-  padding: 0px;
-  color: var(--accent-four);
-}
-
-#projects-list a{
-  color: var(--accent-four);
-}
-
-#projects-list a:hover{
-  color: var(--accent-three);
-}
-
-#about-text{
-  font-size: 18px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-#contact-text{
-  font-size: 18px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .footer-text{
+  text-align: center;
   color: var(--accent-three);
 }
 
@@ -239,6 +167,31 @@
 
 .proj-footer-list a:hover{
   color: var(--accent-three);
+}
+
+@media only screen and (max-width: 1000px){
+
+}
+
+@media only screen and (max-width: 768px) {
+  .circle{
+    width: 400px;
+    height: 400px;
+  }
+
+  #title{
+    width: 300px;
+    height: 300px;
+    font-size: 80px;
+  }
+
+  .nav-buttons{
+    width: 540px;
+    height: 520px;
+    
+  }
+
+  
 }
 
 /*

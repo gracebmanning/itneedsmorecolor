@@ -1,6 +1,15 @@
 import './sewing-fiberarts.css';
-import ProjNavbar from '../ProjNavbar';
-import ProjFooter from '../ProjFooter';
+import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
+import { crochetScarf1 } from '../../assets/images/project-images/project-images';
+
+const projects = [
+  {
+    title: "scarf (1st project!)",
+    completedDate: "January 31, 2024",
+    materials: "acrylic yarn",
+    image: crochetScarf1
+  },
+];
 
 function SewingFiberArts() {
   return (

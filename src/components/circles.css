@@ -1,0 +1,58 @@
+#home-circle{
+    z-index: 1;
+    background-image: url('../assets/images/daisychain.jpeg');
+    background-size: contain;
+}
+  
+#title{
+    width: 450px;
+    height: 450px;
+    font-size: 120px;
+    font-weight: 700;
+    text-wrap: wrap;
+    word-break: break-all;
+}
+
+#proj-circle{
+    background-color: rgba(54, 111, 117, 0.9);
+    color: var(--accent-four);
+}
+
+#about-circle{
+    background-color: rgba(228, 157, 167, 0.9);
+    color: black
+}
+
+#contact-circle{
+    background-color: rgba(54, 111, 117, 0.9);
+    color: var(--accent-four);
+}
+
+#projects-list{
+    list-style-type: none;
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+    color: var(--accent-four);
+}
+  
+#projects-list a{
+    color: var(--accent-four);
+}
+  
+#projects-list a:hover{
+    color: var(--accent-three);
+}
+
+#about-text{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+  
+#contact-text{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}

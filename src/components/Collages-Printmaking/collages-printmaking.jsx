@@ -1,6 +1,5 @@
 import './collages-printmaking.css';
-import ProjNavbar from '../ProjNavbar';
-import ProjFooter from '../ProjFooter';
+import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
 
 function CollagesPrintmaking() {
   return (

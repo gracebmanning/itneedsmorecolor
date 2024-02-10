@@ -1,6 +1,16 @@
 import '../App.css';
 
-function ProjFooter() {
+export function ProjNavbar() {
+  return (
+    <nav>
+      <a className="proj-nav-circle" href="/">
+          <h1 id="proj-nav-title">itneedsmorecolor.com</h1>
+      </a>
+    </nav>
+  );
+}
+
+export function ProjFooter() {
   return (
     <footer className="proj-footer">
       <ul className="proj-footer-list">
@@ -26,6 +36,4 @@ function ProjFooter() {
       </ul>
     </footer>
   );
-}
-
-export default ProjFooter;
+};
