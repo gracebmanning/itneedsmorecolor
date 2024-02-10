@@ -1,8 +1,0 @@
-.page-content{
-    color: var(--accent-three);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}

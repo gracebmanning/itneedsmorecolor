@@ -3,7 +3,7 @@ import globe from '../assets/icons/entire_network_globe-0.png';
 import book from '../assets/icons/address_book-0.png';
 import folder from '../assets/icons/directory_favorites-2.png';
 import search from '../assets/icons/search_directory-0.png';
-import { HomeCircle, ProjectCircle, AboutCircle, ContactCircle } from './circle';
+import { HomeCircle, ProjectCircle, AboutCircle, ContactCircle } from './Circles/circle';
 
 let currentCircle = 'home-circle';
 function switchCircles(id){

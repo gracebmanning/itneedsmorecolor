@@ -1,6 +1,6 @@
 #home-circle{
     z-index: 1;
-    background-image: url('../assets/images/daisychain.jpeg');
+    background-image: url('../../assets/images/daisychain.jpeg');
     background-size: contain;
 }
   
@@ -14,19 +14,19 @@
 }
 
 #proj-circle{
-    background-image: url('../assets/images/daisychain.jpeg');
+    background-image: url('../../assets/images/daisychain.jpeg');
     box-shadow: inset 0 0 0 1000px rgba(54, 111, 117, 0.9);
     color: var(--accent-four);
 }
 
 #about-circle{
-    background-image: url('../assets/images/daisychain.jpeg');
+    background-image: url('../../assets/images/daisychain.jpeg');
     box-shadow: inset 0 0 0 1000px rgba(228, 157, 167, 0.9);
     color: black
 }
 
 #contact-circle{
-    background-image: url('../assets/images/daisychain.jpeg');
+    background-image: url('../../assets/images/daisychain.jpeg');
     box-shadow: inset 0 0 0 1000px rgba(54, 111, 117, 0.9);
     color: var(--accent-four);
 }

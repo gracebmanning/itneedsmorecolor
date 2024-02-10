@@ -1,11 +1,11 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Main from './components/Main';
-import WebsitesCoding from './components/Websites-Coding/websites-coding';
-import UIUXGraphicDesign from './components/UIUX-GraphicDesign/uiux-graphicdesign';
-import SewingFiberArts from './components/Sewing-FiberArts/sewing-fiberarts';
-import PhotographyFilmmaking from './components/Photography-Filmmaking/photography-filmmaking';
-import CollagesPrintmaking from './components/Collages-Printmaking/collages-printmaking';
+import WebsitesCoding from './components/Projects/websites-coding';
+import UIUXGraphicDesign from './components/Projects/uiux-graphicdesign';
+import SewingFiberArts from './components/Projects/sewing-fiberarts';
+import PhotographyFilmmaking from './components/Projects/photography-filmmaking';
+import CollagesPrintmaking from './components/Projects/collages-printmaking';
 
 function App() {
   return (

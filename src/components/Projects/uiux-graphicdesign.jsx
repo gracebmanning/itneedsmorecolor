@@ -1,15 +1,14 @@
-import './photography-filmmaking.css';
 import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
 
-function PhotographyFilmmaking() {
+function UIUXGraphicDesign() {
   return (
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>photography</h1>
+            <h1>UI/UX design</h1>
             <p>--------------- project gallery goes here ---------------</p>
             <br/><br/><br/>
-            <h1>filmmaking</h1>
+            <h1>graphic design</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>
@@ -17,4 +16,4 @@ function PhotographyFilmmaking() {
   );
 }
 
-export default PhotographyFilmmaking;
+export default UIUXGraphicDesign;

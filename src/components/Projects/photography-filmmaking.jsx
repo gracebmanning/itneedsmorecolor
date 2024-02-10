@@ -1,15 +1,14 @@
-import './websites-coding.css';
 import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
 
-function WebsitesCoding() {
+function PhotographyFilmmaking() {
   return (
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>websites</h1>
+            <h1>photography</h1>
             <p>--------------- project gallery goes here ---------------</p>
             <br/><br/><br/>
-            <h1>other coding projects</h1>
+            <h1>filmmaking</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>
@@ -17,4 +16,4 @@ function WebsitesCoding() {
   );
 }
 
-export default WebsitesCoding;
+export default PhotographyFilmmaking;
