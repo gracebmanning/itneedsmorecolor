@@ -5,53 +5,6 @@ import folder from '../assets/icons/directory_favorites-2.png';
 import search from '../assets/icons/search_directory-0.png';
 import { HomeCircle, ProjectCircle, AboutCircle, ContactCircle } from './circle';
 
-function show(){
-  for(let a of arguments){
-    let elem = document.getElementById(a);
-    elem.style.visibility = "visible";
-  }
-}
-
-function hide(){
-  for(let a of arguments){
-    let elem = document.getElementById(a);
-    elem.style.visibility = "hidden";
-  }
-}
-
-function toggleCircles(id){
-  let elem = document.getElementById(id);
-  if(id === "proj-circle"){
-    console.log(elem.style.visibility);
-    if(elem.style.visibility === "hidden"){
-      show("proj-circle");
-      hide("title", "about-circle", "contact-circle");
-    } else{
-      hide("proj-circle");
-      show("title");
-    }
-  } else if(id === "about-circle"){
-    if(elem.style.visibility === "hidden"){
-      show("about-circle");
-      hide("title", "proj-circle", "contact-circle");
-    } else{
-      hide("about-circle");
-      show("title");
-    }
-  } else if(id === "contact-circle"){
-    if(elem.style.visibility === "hidden"){
-      show("contact-circle");
-      hide("title", "proj-circle", "about-circle");
-    } else{
-      hide("contact-circle");
-      show("title");
-    }
-  } else{
-    show("title");
-    hide("proj-circle", "about-circle", "contact-circle");
-  }
-}
-
 let currentCircle = 'home-circle';
 function switchCircles(id){
   let elem = document.getElementById(currentCircle);
@@ -76,19 +29,19 @@ function Main() {
           <h1 id="title">itneedsmorecolor.com</h1>
         </div>
         <div className="nav-buttons">
-            <div className="nav-button" id="home-icon" onClick={switchCircles}>
+            <div className="nav-button" id="home-icon" onClick={() => switchCircles('home-circle')}>
               <img className="nav-icon" src={globe} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">home</p>
             </div>
-            <div className="nav-button" id="proj-icon" onClick={() => toggleCircles('proj-circle')}>
+            <div className="nav-button" id="proj-icon" onClick={() => switchCircles('proj-circle')}>
               <img className="nav-icon" src={folder} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">projects</p>
             </div>
-            <div className="nav-button" id="about-icon" onClick={() => toggleCircles('about-circle')}>
+            <div className="nav-button" id="about-icon" onClick={() => switchCircles('about-circle')}>
               <img className="nav-icon" src={search} alt="Windows 98 folder icon with magnifying glass over it." />
               <p className="nav-text">about</p>
             </div>
-            <div className="nav-button" id="contact-icon" onClick={() => toggleCircles('contact-circle')}>
+            <div className="nav-button" id="contact-icon" onClick={() => switchCircles('contact-circle')}>
               <img className="nav-icon" src={book} alt="Windows 98 icon of an address book." />
               <p className="nav-text">contact</p>
             </div>
