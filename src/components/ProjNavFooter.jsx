@@ -3,8 +3,11 @@ import '../App.css';
 export function ProjNavbar() {
   return (
     <nav>
-      <a className="proj-nav-circle" href="/">
-          <h1 id="proj-nav-title">itneedsmorecolor.com</h1>
+      <a className="proj-nav-link" href="/">
+          <div className="proj-nav-circle">
+            <h1 id="proj-nav-title">itneedsmorecolor.com</h1>
+          </div>
+          <p>back to home</p>
       </a>
     </nav>
   );
