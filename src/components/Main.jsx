@@ -28,7 +28,7 @@ function Main() {
         <div className="circle" id="home-circle">
           <h1 id="title">itneedsmorecolor.com</h1>
         </div>
-        <div className="nav-buttons">
+        <nav className="nav-buttons">
             <div className="nav-button" id="home-icon" onClick={() => switchCircles('home-circle')}>
               <img className="nav-icon" src={globe} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">home</p>
@@ -45,7 +45,7 @@ function Main() {
               <img className="nav-icon" src={book} alt="Windows 98 icon of an address book." />
               <p className="nav-text">contact</p>
             </div>
-        </div>
+        </nav>
       </div>
       <footer>
           <p className="footer-text">

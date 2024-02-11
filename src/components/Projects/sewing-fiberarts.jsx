@@ -10,6 +10,27 @@ const crochetProjects = [
     image: crochetScarf1,
     alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
   },
+  {
+    title: "scarf (1st project!)",
+    date: "January 31, 2024",
+    materials: "acrylic yarn",
+    image: crochetScarf1,
+    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
+  },
+  {
+    title: "scarf (1st project!)",
+    date: "January 31, 2024",
+    materials: "acrylic yarn",
+    image: crochetScarf1,
+    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
+  },
+  {
+    title: "scarf (1st project!)",
+    date: "January 31, 2024",
+    materials: "acrylic yarn",
+    image: crochetScarf1,
+    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
+  },
 ];
 
 function SewingFiberArts() {
@@ -23,8 +44,8 @@ function SewingFiberArts() {
             <h1>crochet</h1>
             <div className="projectGallery">
               {crochetProjects.map((proj, index) => (
-                <ProjectTile key={index} project={proj} />
-              ))}
+                  <ProjectTile key={index} project={proj} />
+                ))}
             </div>
             <br/><br/><br/>
             <h1>embroidery</h1>

@@ -1,12 +1,3 @@
-/*
-  Z-INDEXES
-  nav-buttons: 0
-  home-circle: 1
-  proj-circle: 2
-  about-circle: 3
-  contact-circle: 4
-*/
-
 .main{
   min-width: 100vw;
   min-height: 100vh;
@@ -107,12 +98,10 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 100vw;
 }
 
 .page-content{
   color: var(--accent-three);
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,29 +170,9 @@
 
 .projectGallery{
   height: fit-content;
+  width: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.projectTile{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  width: fit-content;
-}
-
-.projectImage{
-  height: 310px;
-}
-
-.projectTitle{
-  margin: 0px;
-}
-
-.projectDate{
-  margin: 0px;
 }
 
 @media only screen and (max-width: 1000px){
