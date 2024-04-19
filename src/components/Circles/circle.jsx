@@ -37,7 +37,7 @@ export function AboutCircle(){
   return(
     <div className="circle" id="about-circle">
       <h1>about me</h1>
-      <p id="about-text">I'm Grace and I make things! It's my favorite thing to do.</p>
+      <p id="about-text">hi, my name is Grace and I love making things.</p>
     </div>
   );
 }
@@ -46,7 +46,7 @@ export function ContactCircle(){
   return(
     <div className="circle" id="contact-circle">
       <h1>contact</h1>
-      <p id="contact-text">want to work together or commission work from me? contact me via email at gracebmanning@gmail.com</p>
+      <p id="contact-text">want to work together or commission work from me? contact me via email at grace@itneedsmorecolor.com</p>
     </div>
   );
 }
