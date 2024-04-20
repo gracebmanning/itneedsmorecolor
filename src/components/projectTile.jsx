@@ -4,8 +4,9 @@ const styles = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    textAlign: "center",
     height: "fitContent",
-    width: "fitContent",
+    width: "233px",
     margin: "10px"
   },
   projectImage: {
@@ -25,7 +26,7 @@ export function ProjectTile({project}){
         <img className="projectImage" src={project.image} alt={project.alt} style={styles.projectImage} />
         <h2 className="projectTitle" style={styles.projectTitle}>{project.title}</h2>
         <h3 className="projectDate" style={styles.projectDate}>{project.date}</h3>
-        <p>materials: {project.materials}</p>
+        <p className="projectMaterials">materials: {project.materials}</p>
       </div>
     )
 }

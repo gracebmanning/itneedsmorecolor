@@ -1,35 +1,23 @@
 import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
-import { crochetScarf1 } from '../../assets/images/project-images/project-images';
+import { crochetScarf1, tsunoBag } from '../../assets/images/project-images/project-images';
 import { ProjectTile } from '../ProjectTile';
 
+const sewingProjects = [
+  {
+    title: "tsuno bag",
+    date: "March 2024",
+    materials: "cotton canvas fabric, polyester thread",
+    image: tsunoBag,
+    alt: "green tsuno bag"
+  },
+]
 const crochetProjects = [
   {
     title: "scarf (1st project!)",
-    date: "January 31, 2024",
+    date: "January 2024",
     materials: "acrylic yarn",
     image: crochetScarf1,
-    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
-  },
-  {
-    title: "scarf (1st project!)",
-    date: "January 31, 2024",
-    materials: "acrylic yarn",
-    image: crochetScarf1,
-    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
-  },
-  {
-    title: "scarf (1st project!)",
-    date: "January 31, 2024",
-    materials: "acrylic yarn",
-    image: crochetScarf1,
-    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
-  },
-  {
-    title: "scarf (1st project!)",
-    date: "January 31, 2024",
-    materials: "acrylic yarn",
-    image: crochetScarf1,
-    alt: "a skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
+    alt: "skinny crochet scarf using colors of mustard, burnt orange, burgundy, and cream."
   },
 ];
 
@@ -39,6 +27,11 @@ function SewingFiberArts() {
         <ProjNavbar/>
         <div className="page-content">
             <h1>sewing</h1>
+            <div className="projectGallery">
+              {sewingProjects.map((proj, index) => (
+                  <ProjectTile key={index} project={proj} />
+                ))}
+            </div>
             <p>--------------- project gallery goes here ---------------</p>
             <br/><br/><br/>
             <h1>crochet</h1>
