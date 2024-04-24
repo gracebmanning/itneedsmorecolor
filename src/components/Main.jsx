@@ -1,4 +1,5 @@
 import '../App.css';
+import './stars.css';
 import { useState } from 'react';
 import globe from '../assets/icons/entire_network_globe-0.png';
 import book from '../assets/icons/address_book-0.png';
@@ -23,22 +24,28 @@ function Main() {
 
   return (
     <div className="main">
+      <div className="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
       <div className="content">
         {circle}
         <nav className="nav-buttons">
-            <div className="nav-button" id="home-icon" onClick={() => switchCircles('home-circle')}>
+            <div className="nav-button" id="home-icon" onClick={() => switchCircles('home-circle')} onMouseOver={() => switchCircles('home-circle')}>
               <img className="nav-icon" src={globe} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">home</p>
             </div>
-            <div className="nav-button" id="proj-icon" onClick={() => switchCircles('project-circle')}>
+            <div className="nav-button" id="proj-icon" onClick={() => switchCircles('project-circle')} onMouseOver={() => switchCircles('project-circle')}>
               <img className="nav-icon" src={folder} alt="Windows 98 folder icon with blue asterisk on it." />
               <p className="nav-text">projects</p>
             </div>
-            <div className="nav-button" id="about-icon" onClick={() => switchCircles('about-circle')}>
+            <div className="nav-button" id="about-icon" onClick={() => switchCircles('about-circle')}  onMouseOver={() => switchCircles('about-circle')}>
               <img className="nav-icon" src={search} alt="Windows 98 folder icon with magnifying glass over it." />
               <p className="nav-text">about</p>
             </div>
-            <div className="nav-button" id="contact-icon" onClick={() => switchCircles('contact-circle')}>
+            <div className="nav-button" id="contact-icon" onClick={() => switchCircles('contact-circle')}  onMouseOver={() => switchCircles('contact-circle')}>
               <img className="nav-icon" src={book} alt="Windows 98 icon of an address book." />
               <p className="nav-text">contact</p>
             </div>
@@ -48,6 +55,7 @@ function Main() {
           <p className="footer-text">
             center image is fabric from <a href="https://schumacher.com/catalog/products/180131" target="_blank" rel="noreferrer">Schumacher</a>. 
             Windows 98 icons from <a href="https://alexmeub.com/projects/windows-98-icons/" target="_blank" rel="noreferrer">Alex Meub</a>.
+            stars background by <a href="https://codepen.io/riley-pearce/pen/OJWPjZM" target="_blank" rel="noreferrer">Riley Pearce</a>.
           </p>
         </footer>
     </div>

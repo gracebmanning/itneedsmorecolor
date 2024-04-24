@@ -1,4 +1,4 @@
-import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
+import { ProjNavbar, ProjFooter } from './ProjNavFooter';
 
 function UIUXGraphicDesign() {
   return (

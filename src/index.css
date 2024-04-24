@@ -27,10 +27,17 @@ p{
 }
 
 footer{
+  z-index: 0;
   margin-top: auto;
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media screen {
+  footer{
+    margin-top: 150px;
+  }
 }

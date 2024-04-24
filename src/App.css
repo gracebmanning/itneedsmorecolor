@@ -50,6 +50,8 @@
 
 .nav-text{
   margin: 0px;
+  font-size: 18px;
+  color: var(--accent-three);
 }
 
 #home-icon{
@@ -67,11 +69,6 @@
 #contact-icon{
   margin-left: 75px;
   margin-top: 20px;
-}
-
-.nav-text{
-  font-size: 18px;
-  color: var(--accent-three);
 }
 
 .footer-text{
@@ -97,105 +94,65 @@
   align-items: center;
 }
 
-.proj-nav-link{
-  text-decoration: none;
-  color: var(--accent-three);
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  transform: scale(1.0);
-  transition: 0.2s ease-in;
+@media only screen and (max-width: 1100px) {
+  .nav-buttons{
+    width: 645px;
+    height: 625px;
+  }
 }
 
-.proj-nav-link:hover{
-  cursor: pointer;
-  transform: scale(1.02);
-  transition: 0.2s ease-out;
-}
-
-.proj-nav-circle{
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  background-image: url('./assets/images/daisychain.jpeg');
-  background-size: contain;
-  padding: 0px;
-  color: black;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-#proj-nav-title{
-  width: 100px;
-  height: 100px;
-  font-size: 26px;
-  font-weight: 700;
-  text-wrap: wrap;
-  word-break: break-all;
-}
-
-.proj-footer{
-  text-align: center;
-  margin-top: auto;
-}
-
-.proj-footer-list{
-  color: var(--accent-three);
-}
-
-.proj-footer-list li{
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.proj-footer-list a{
-  color: var(--accent-one);
-}
-
-.proj-footer-list a:hover{
-  color: var(--accent-three);
-}
-
-.projectGallery{
-  height: fit-content;
-  width: fit-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-@media only screen and (max-width: 1000px){
-
-}
-
-@media only screen and (max-width: 768px) {
-  .circle{
-    width: 400px;
+@media only screen and (max-width: 900px){
+  .nav-buttons{
+    width: 550px;
     height: 400px;
   }
 
-  #title{
-    width: 300px;
-    height: 300px;
-    font-size: 80px;
+  .nav-icon{
+    width: 60px;
+    height: 60px;
+    margin: 0px;
   }
+}
 
+@media only screen and (max-width: 750px) {
   .nav-buttons{
-    width: 540px;
-    height: 520px;
-    
+    width: 450px;
+    height: 300px;
   }
 
-  
+  .nav-button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nav-icon{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav-buttons{
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+
+  .nav-button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nav-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+  }
+
+  .nav-text{
+    font-size: 14px;
+  }
 }
 
 /*

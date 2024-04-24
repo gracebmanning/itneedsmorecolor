@@ -1,4 +1,4 @@
-import '../App.css';
+import './projects.css';
 
 export function ProjNavbar() {
   return (

@@ -1,6 +1,6 @@
-import { ProjNavbar, ProjFooter } from '../ProjNavFooter';
+import { ProjNavbar, ProjFooter } from './ProjNavFooter';
 import { crochetScarf1, tsunoBag } from '../../assets/images/project-images/project-images';
-import { ProjectTile } from '../ProjectTile';
+import { ProjectTile } from './ProjectTile';
 
 const sewingProjects = [
   {
