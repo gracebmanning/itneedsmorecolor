@@ -3,6 +3,7 @@
     border-radius: 50%;
     width: 600px;
     height: 600px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,6 +110,22 @@
     height: 200px;
     font-size: 50px;
   }
+
+  .circle h1{
+    font-size: 20px;
+}
+
+  #about-text{
+    font-size: 16px;
+    }
+
+    #contact-text{
+        font-size: 16px;
+    }
+
+    #projects-list{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
