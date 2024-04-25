@@ -5,6 +5,30 @@
   --accent-four: #F3F2D4;
 }
 
+/* width */
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+/* track */
+::-webkit-scrollbar-track{
+  background: var(black);
+}
+
+/* handle */
+::-webkit-scrollbar-thumb{
+  background: var(--accent-three);
+  border-radius: 20px;
+  border: 3px solid var(--accent-three);
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover{
+  background: #C19298;
+  border: 3px solid #C19298;
+  cursor: pointer;
+}
+
 body {
   margin: 0px;
   padding: 0px;

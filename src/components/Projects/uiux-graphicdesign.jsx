@@ -5,10 +5,7 @@ function UIUXGraphicDesign() {
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>UI/UX design</h1>
-            <p>--------------- project gallery goes here ---------------</p>
-            <br/><br/><br/>
-            <h1>graphic design</h1>
+            <h1 className="projectPageTitle">UI/UX design • graphic design</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>

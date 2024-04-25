@@ -5,10 +5,7 @@ function WebsitesCoding() {
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>websites</h1>
-            <p>--------------- project gallery goes here ---------------</p>
-            <br/><br/><br/>
-            <h1>other coding projects</h1>
+            <h1 className="projectPageTitle">websites • other coding projects</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>

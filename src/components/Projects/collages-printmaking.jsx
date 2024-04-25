@@ -5,10 +5,7 @@ function CollagesPrintmaking() {
     <div className="page-container">
         <ProjNavbar/>
         <div className="page-content">
-            <h1>collages</h1>
-            <p>--------------- project gallery goes here ---------------</p>
-            <br/><br/><br/>
-            <h1>printmaking</h1>
+            <h1 className="projectPageTitle">collages • printmaking</h1>
             <p>--------------- project gallery goes here ---------------</p>
         </div>
         <ProjFooter/>
