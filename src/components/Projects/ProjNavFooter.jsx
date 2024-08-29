@@ -12,6 +12,8 @@ export function ProjNavbar() {
   );
 }
 
+
+// no longer in use
 export function ProjFooter() {
   return (
     <footer className="proj-footer">

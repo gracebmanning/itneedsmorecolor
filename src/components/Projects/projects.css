@@ -69,6 +69,13 @@
 
 .projectPageTitle{
     font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.projectPageSubTitle{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
 }
 
 .projectGallery{
@@ -78,3 +85,29 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: baseline;
 }
+
+.projectTile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fitContent;
+    width: 233px;
+    margin: 10px;
+  }
+
+  .projectImage{
+    height: 250px;
+  }
+
+  .projectTitle{
+    margin: 0px;
+    font-size: 22px;
+  }
+  
+  .projectDate{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+  }

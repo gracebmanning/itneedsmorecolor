@@ -8,26 +8,17 @@ export function HomeCircle(){
   );
 }
 
+
+// USE FOR BIG PROJECTS
+//<li><a className="proj-list-link" href="/">June 2024 - project name</a></li>
+//<li><a className="proj-list-link" href="/">July 2024 - project name</a></li>
 export function ProjectCircle(){
   return(
     <div className="circle" id="project-circle">
       <h1>projects</h1>
       <ul id="projects-list">
-        <li>
-          <a className="proj-list-link" href="/websites-coding">websites • coding</a>
-        </li>
-        <li>
-          <a className="proj-list-link" href="/uiux-graphicdesign">ui/ux • graphic design</a>
-        </li>
-        <li>
-          <a className="proj-list-link" href="/sewing-fiberarts">sewing • fiber arts</a>
-        </li>
-        <li>
-          <a className="proj-list-link" href="/photography-filmmaking">photography • filmmaking</a>
-        </li>
-        <li>
-          <a className="proj-list-link" href="/collages-printmaking">collages • printmaking</a>
-        </li>
+        
+        <li><a className="proj-list-link" href="/projects-gallery">experimenting / other projects</a></li>
       </ul>
     </div>
   )
@@ -37,7 +28,7 @@ export function AboutCircle(){
   return(
     <div className="circle" id="about-circle">
       <h1>about me</h1>
-      <p id="about-text">hi, my name is Grace and I love making things.</p>
+      <p id="about-text">this website is unfinished!!</p>
     </div>
   );
 }
