@@ -1,7 +1,3 @@
-import crochetScarf1 from '../project-images/crochet-scarf1.png';
-import tsunoBag from '../project-images/tsuno-bag.png';
+import projectFillerImage from "./project_filler_image.png";
 
-export {
-    crochetScarf1,
-    tsunoBag
-};
+export { projectFillerImage };
